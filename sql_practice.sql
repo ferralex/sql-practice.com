@@ -399,9 +399,10 @@ WHERE
   AND city = 'Halifax'
 
 /*Show the percent of patients that have 'M' as their gender. Round the answer to the nearest hundreth number and in percent form.*/
+--For some reasons, I had difficulties whit this :s
 SELECT
   round(100 * avg(gender = 'M'), 2) || '%' AS percent_of_male_patients
-FROM patients;
+FROM patients
 
 /*Show the patient_id and total_spent for patients who spent over 150 in combined medication_cost. Sort by most total_spent to least total_spent.*/
 SELECT
